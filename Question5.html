@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Array</title>
+</head>
+<body>
+<p>Q.) Write a program in javascript for the following:-<br>
+    a. declare array<br>
+    b. add item<br>
+    c. delete an item<br>
+    d. add a particular index<br>
+    e. delete from a particular index<br>
+ </p>
+
+<p id="sol1"></p>
+<p id="sol2"></p>
+<p id="sol3"></p>
+<p id="sol4"></p>
+
+<script>
+
+const arr=[];  // declaring an array
+
+arr.push("Sunita");  // adding items 
+arr.push("Mohit");
+arr.push("Kajal");
+arr.push("Punit");
+arr.push("Rohan");
+arr.push("Payal");
+arr.push("Sumit");
+
+document.getElementById("sol1").innerHTML = "b. Adding Items <br>"+ arr;
+
+arr.pop();  // deleting an item
+document.getElementById("sol2").innerHTML ="c. Deleting Item <br>"+ arr;
+
+arr[3]="Suman"; // adding at a particular index
+document.getElementById("sol3").innerHTML ="d. adding at a particular index <br>"+ arr;
+
+arr.splice(2,1);  // delete from a particular index
+document.getElementById("sol4").innerHTML ="e. delete from a particular index <br>"+ arr;
+
+</script>
+
+</body>
+</html>
