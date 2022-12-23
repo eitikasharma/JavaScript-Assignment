@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fibonacci</title>
+</head>
+<body>
+<p>Q.) Write a program to print a series with a 'while' loop.<br>
+0,1,1,2,3,5,8,13,21,..................
+</p>
+<p>Enter any Number </p>
+<input id="number">
+<button id="display" onclick="Fibb()">Display</button>
+<p id="Solution"></p>
+<script>
+    
+    function Fibb()
+    {
+    let size= document.getElementById('number').value;
+    //console.log(size);
+    const arr=[0,1];
+   // console.log(arr);
+    
+let i=1;
+    while (i<size) {
+        arr.push(arr[i]+arr[i-1]);
+        //console.log(arr);
+        i++;
+}
+document.getElementById('Solution').innerHTML=arr;
+}
+</script>
+
+</body>
+</html>
